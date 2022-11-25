@@ -1,0 +1,21 @@
+<ion-row style="width: 100%; height: 48px; border-bottom: 1px solid #ebebeb">
+  <ion-col size="1"> </ion-col>
+  <ion-col class="align_vertical_center" size="5">
+    <span>{{ person?.name }}</span>
+  </ion-col>
+  <ion-col size="2">
+    <span class="align_vertical_center data_number">{{ person?.target }}%</span>
+  </ion-col>
+  <ion-col size="2">
+    <span
+      class="align_vertical_center data_number actual_score_bar"
+      [ngStyle]="{
+        background: person.actual < person.target ? '#ED5E61' : '#59B77A'
+      }"
+      >{{ person?.actual }}%</span
+    >
+  </ion-col>
+  <ion-col size="2">
+    <span class="align_vertical_center data_number">{{ person?.points }}</span>
+  </ion-col>
+</ion-row>

@@ -1,0 +1,30 @@
+ion-content {
+  --ion-background-color: #FFFFFF
+}
+
+ion-title {
+  color: black;
+}
+
+ion-row {
+  height: 48px;
+}
+
+.parent_container {
+  padding: 100px;
+  height: 100%;
+  width: 100%;
+}
+
+.row_header {
+  background-color: #F8F8F8;
+}
+
+.row_item {
+  border-bottom: 1px solid #EBEBEB;
+}
+
+.data_number_header {
+  justify-content: center;
+  display: flex;
+}

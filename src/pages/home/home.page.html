@@ -1,0 +1,25 @@
+<ion-content [fullscreen]="true">
+  <div class="parent_container">
+    <h1>Default</h1>
+
+
+    <ion-grid>
+      <ion-row class="row_header">
+        <ion-col size="1"> </ion-col>
+        <ion-col size="5">
+          <h3>Name</h3>
+        </ion-col>
+        <ion-col size="2" class="data_number_header">
+          <h3>Target Score</h3>
+        </ion-col>
+        <ion-col size="2" class="data_number_header">
+          <h3>Acctual Score</h3>
+        </ion-col>
+        <ion-col size="2" class="data_number_header">
+          <h3>Total Points</h3>
+        </ion-col>
+      </ion-row>
+      <app-person *ngFor="let person of persons" [person]="person"></app-person>
+    </ion-grid>
+  </div>
+</ion-content>
