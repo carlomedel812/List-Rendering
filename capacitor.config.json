@@ -1,0 +1,6 @@
+{
+	"appId": "io.ionic.starter",
+	"appName": "ListRendering",
+	"webDir": "www",
+	"bundledWebRuntime": false
+}
